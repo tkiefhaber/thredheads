@@ -8,10 +8,10 @@ function parseRSS(url, container) {
     dataType: 'json',
     success: function(data) {
       //console.log(data.responseData.feed);
-      $(container).html('<h2>'+capitaliseFirstLetter(data.responseData.feed.title)+'</h2>');
+      $(container).html('<h1>'+capitaliseFirstLetter(data.responseData.feed.title)+'</h1>');
 
       $.each(data.responseData.feed.entries, function(key, value){
-        var thehtml = '<h3><a href="'+value.link+'" target="_blank">'+value.title+'</a></h3>';
+        var thehtml = '<p><a href="'+value.link+'" target="_blank">'+value.title+'</a></p>';
         $(container).append(thehtml);
       });
     }

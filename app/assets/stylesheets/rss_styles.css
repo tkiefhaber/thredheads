@@ -124,10 +124,10 @@ p {
   display: block;
   font-size: 1.35em;
   line-height: 1.5em;
-  margin-bottom: 22px;
+  margin-bottom: 5px;
 }
 
-a { color: #5a9352; text-decoration: none; }
+a { color: #7F8786; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .center { display: block; text-align: center; }
@@ -157,20 +157,6 @@ a:hover { text-decoration: underline; }
   display: block;
   margin-bottom: 25px;
   width: 90%;
-}
-.feedcontainer h2 { 
-  font-weight: bold;
-  font-size: 36px;
-  color: #535353;
-  line-height: 1.2em;
-  margin-bottom: 8px;
-}
-.feedcontainer h3 { 
-  font-weight: bold; 
-  font-size: 24px; 
-  font-color: black;
-  line-height: 1.2em;
-  margin-bottom: 7px;
 }
 
 /** clearfix **/
