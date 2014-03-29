@@ -4,10 +4,9 @@
  */
 function parseRSS(url, container) {
   $.ajax({
-    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=20&callback=?&q=' + encodeURIComponent(url),
+    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=50&callback=?&q=' + encodeURIComponent(url),
     dataType: 'json',
     success: function(data) {
-      //console.log(data.responseData.feed);
       $(container).html('<h1>'+capitaliseFirstLetter(data.responseData.feed.title)+'</h1>');
 
       $.each(data.responseData.feed.entries, function(key, value){

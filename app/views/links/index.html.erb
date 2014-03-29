@@ -19,11 +19,13 @@
       <div id="real-estate-2" class="feedcontainer"></div>
       <div id="real-estate-3" class="feedcontainer"></div>
       <div id="real-estate-4" class="feedcontainer"></div>
+      <div id="maplewood-listings" class="feedcontainer"></div>
+      <div id="orange-listings" class="feedcontainer"></div>
+      <div id="summit-listings" class="feedcontainer"></div>
     </div><!-- @end #content -->
   </div><!-- @end #w -->
 <script type="text/javascript">
 $(function(){
-  // running custom RSS functions
   parseRSS('http://api.feedzilla.com/v1/categories/20/articles.rss', '#life-style');
   parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1021/articles.rss', '#life-style-2');
   parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1031/articles.rss', '#life-style-3');
@@ -34,6 +36,9 @@ $(function(){
   parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1158/articles.rss', '#real-estate-2');
   parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1782/articles.rss', '#real-estate-3');
   parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1160/articles.rss', '#real-estate-4');
+  parseRSS('http://www.trulia.com/rss2/for_sale/Maplewood,NJ/', '#maplewood-listings');
+  parseRSS('http://www.trulia.com/rss2/for_sale/Orange,NJ/', '#orange-listings');
+  parseRSS('http://www.trulia.com/rss2/for_sale/Summit,NJ/', '#summit-listings');
 });
 </script>
 </body>
