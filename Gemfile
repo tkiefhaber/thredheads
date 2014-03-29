@@ -10,6 +10,9 @@ gem 'pg', group: [:production]
 # auth
 gem 'oauth2'
 
+# for heroku
+gem 'rails_12factor'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
