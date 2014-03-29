@@ -1,1 +1,52 @@
-aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+<!doctype html>
+<html lang="en-US">
+<head>
+  <%= stylesheet_link_tag 'rss_styles' %>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <%= javascript_include_tag 'rss_parser' %>
+</head>
+
+<body>
+  <div id="w">
+    <div id="content">
+      <h1>placeholder articles</h1>
+      
+      <div id="life-style" class="feedcontainer"></div>
+      <hr>
+      <div id="life-style-2" class="feedcontainer"></div>
+      <hr>
+      <div id="life-style-3" class="feedcontainer"></div>
+      <hr>
+      <div id="life-style-4" class="feedcontainer"></div>
+      <hr>
+      <div id="life-style-5" class="feedcontainer"></div>
+      <hr>
+      <div id="life-style-6" class="feedcontainer"></div>
+      <hr>
+      <div id="real-estate" class="feedcontainer"></div>
+      <hr>
+      <div id="real-estate-2" class="feedcontainer"></div>
+      <hr>
+      <div id="real-estate-3" class="feedcontainer"></div>
+      <hr>
+      <div id="real-estate-4" class="feedcontainer"></div>
+      <hr>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+<script type="text/javascript">
+$(function(){
+  // running custom RSS functions
+  parseRSS('http://api.feedzilla.com/v1/categories/20/articles.rss', '#life-style');
+  parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1021/articles.rss', '#life-style-2');
+  parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1031/articles.rss', '#life-style-3');
+  parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1757/articles.rss', '#life-style-4');
+  parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1030/articles.rss', '#life-style-5');
+  parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1029/articles.rss', '#life-style-6');
+  parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1147/articles.rss', '#real-estate');
+  parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1158/articles.rss', '#real-estate-2');
+  parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1782/articles.rss', '#real-estate-3');
+  parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1160/articles.rss', '#real-estate-4');
+});
+</script>
+</body>
+</html>
