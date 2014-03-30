@@ -21,7 +21,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: kate_real_estate_production
+  database: thredheads_production
   pool: 5
-  username: kate_real_estate
+  username: thredheads
   password:

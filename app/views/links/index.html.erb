@@ -9,36 +9,34 @@
 <body>
   <div id="w">
     <div id="content">
-      <div id="life-style" class="feedcontainer"></div>
-      <div id="life-style-2" class="feedcontainer"></div>
-      <div id="life-style-3" class="feedcontainer"></div>
-      <div id="life-style-4" class="feedcontainer"></div>
-      <div id="life-style-5" class="feedcontainer"></div>
-      <div id="life-style-6" class="feedcontainer"></div>
-      <div id="real-estate" class="feedcontainer"></div>
-      <div id="real-estate-2" class="feedcontainer"></div>
-      <div id="real-estate-3" class="feedcontainer"></div>
-      <div id="real-estate-4" class="feedcontainer"></div>
-      <div id="maplewood-listings" class="feedcontainer"></div>
-      <div id="orange-listings" class="feedcontainer"></div>
-      <div id="summit-listings" class="feedcontainer"></div>
+      <div id="life-style-news" class="feedcontainer"></div>
+      <div id="entertaining-news" class="feedcontainer"></div>
+      <div id="luxury-news" class="feedcontainer"></div>
+      <div id="shopping-news" class="feedcontainer"></div>
+      <div id="more-life-style-news" class="feedcontainer"></div>
+      <div id="celebrities-news" class="feedcontainer"></div>
+      <div id="hollywood-news" class="feedcontainer"></div>
+      <div id="bridalguide-fashion" class="feedcontainer"></div>
+      <div id="bridalguide-bridalbuzz" class="feedcontainer"></div>
+      <div id="bridalguide-fashionbeauty" class="feedcontainer"></div>
+      <div id="style-homepage" class="feedcontainer"></div>
+      <div id="justluxe-fashion" class="feedcontainer"></div>
     </div><!-- @end #content -->
   </div><!-- @end #w -->
 <script type="text/javascript">
   $(function(){
-    parseRSS('http://api.feedzilla.com/v1/categories/20/articles.rss', '#life-style');
-    parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1021/articles.rss', '#life-style-2');
-    parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1031/articles.rss', '#life-style-3');
-    parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1757/articles.rss', '#life-style-4');
-    parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1030/articles.rss', '#life-style-5');
-    parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1029/articles.rss', '#life-style-6');
-    parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1147/articles.rss', '#real-estate');
-    parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1158/articles.rss', '#real-estate-2');
-    parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1782/articles.rss', '#real-estate-3');
-    parseRSS('http://api.feedzilla.com/v1/categories/22/subcategories/1160/articles.rss', '#real-estate-4');
-    parseRSS('http://www.trulia.com/rss2/for_sale/Maplewood,NJ/', '#maplewood-listings');
-    parseRSS('http://www.trulia.com/rss2/for_sale/Orange,NJ/', '#orange-listings');
-    parseRSS('http://www.trulia.com/rss2/for_sale/Summit,NJ/', '#summit-listings');
+    parseRSS('http://api.feedzilla.com/v1/categories/20/articles.rss', '#life-style-news');
+    parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1021/articles.rss', '#entertaining-news');
+    parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1758/articles.rss', '#luxury-news');
+    parseRSS('http://api.feedzilla.com/v1/categories/20/subcategories/1035/articles.rss', '#shopping-news');
+    parseRSS('http://api.feedzilla.com/v1/categories/17/subcategories/770/articles.rss', '#more-life-style-news');
+    parseRSS('http://api.feedzilla.com/v1/categories/6/subcategories/223/articles.rss', '#celebrities-news');
+    parseRSS('http://api.feedzilla.com/v1/categories/6/subcategories/227/articles.rss', '#hollywood-news');
+    parseRSS('http://www.bridalguide.com/feeds/fashion', '#bridalguide-fashion');
+    parseRSS('http://www.bridalguide.com/blogs/bridal-buzz/feed', '#bridalguide-bridalbuzz');
+    parseRSS('http://www.bridalguide.com/blogs/fashion-beauty/feed', '#bridalguide-fashionbeauty');
+    parseRSS('http://www.style.com/homepage/rss', '#style-homepage');
+    parseRSS('http://www.justluxe.com/rss/rss-channels.php?sec=fineliving', '#justluxe-fashion');
   });
 
 </script>

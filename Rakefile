@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-KateRealEstate::Application.load_tasks
+Thredheads::Application.load_tasks
