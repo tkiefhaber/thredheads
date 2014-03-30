@@ -13,6 +13,10 @@ function parseRSS(url, container) {
         var thehtml = '<p><a href="'+value.link+'" target="_blank">'+value.title+'</a></p>';
         $(container).append(thehtml);
       });
+      $(container + ' p').slideUp();
+      $(container + ' h1').click(function() {
+        $(container + ' p').slideToggle();
+      });
     }
   });
 }
